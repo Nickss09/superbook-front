@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin: 100px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    width: 200px;
+    height: 300px;
+    background-color: aliceblue;
+    margin-left: 50px;
+    text-decoration: none;
+    border-radius: 5%;
+     transition: transform 0.2s ease;
+}
+
+li:hover {
+   transform: translateY(-20px);
+}
