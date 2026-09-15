@@ -42,7 +42,7 @@ export default function Register() {
     <main className="container">
       <div className="card">
 
-        <Image src="/logo.png" alt="logo" width={100} height={100} className="logo" />
+        <Image src="/logo.png" alt="logo" className="logo" />
 
         <h1>Criar conta</h1>
 

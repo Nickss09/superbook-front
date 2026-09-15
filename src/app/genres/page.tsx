@@ -1,16 +1,19 @@
 import Link from "next/link"
+import Image from "next/image"
 import "./page.css"
 
 export default function GenresPage() {
     return (
         <main>
+            <h1>Gêneros Literários</h1>
             <ul>
-                <Link href='/genres/romance'><li>Romance</li></Link>
-                <Link href='/genres/drama'><li>Drama</li></Link>
-                <Link href='/genres/terror'><li>Terror</li></Link>
-                <Link href='/genres/acao'><li>Ação</li></Link>
-                <Link href='/genres/misterio'><li>Mistério</li></Link>
-                <Link href='/genres/suspense'><li>Suspense</li></Link>
+                <Link href='/genres/romance'><li className="romance">Romance</li></Link>
+                <Link href='/genres/fantasia'><li className="fantasia">Fantasia</li></Link>
+                <Link href='/genres/misterio'><li className="misterio">Misterio</li></Link>
+                <Link href='/genres/suspense'><li className="suspense">Suspense</li></Link>
+                <Link href='/genres/terror'><li className="terror">Terror</li></Link>
+                <Link href='/genres/aventura'><li className="aventura">Aventura</li></Link>
+                <Link href='/genres/drama'><li className="drama">Drama</li></Link>
             </ul>
         </main>
     )
