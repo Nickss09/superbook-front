@@ -4,6 +4,8 @@ import { FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { api } from "@/src/http/api";
+
 export default function Register() {
 
   async function handleRegister(e: FormEvent<HTMLFormElement>) {
@@ -16,15 +18,9 @@ export default function Register() {
     const senha = (form.senha as HTMLInputElement).value;
 
     try {
-      const res = await fetch("http://localhost:3001/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ nome, email, senha }),
-      });
+      const res = await api.post('/auth/register', { nome, email, senha });
 
-      const data = await res.json();
+      const data = res.data;
 
       if (data.message === "Cadastro sucesso") {
         alert("Conta criada!");
@@ -42,9 +38,9 @@ export default function Register() {
     <main className="container">
       <div className="card">
 
-        <Image src="/logo.png" alt="logo" className="logo" />
+        <Image src="/logo.png" alt="logo" className="logo" width={170} height={170} />
 
-        <h1>Criar conta</h1>
+        <h1>Criar <span>conta</span></h1>
 
         <p>Preencha os dados abaixo</p>
 

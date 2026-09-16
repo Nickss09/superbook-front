@@ -38,13 +38,7 @@ export default function Home() {
   return (
     <main className='container'>
       <div className='card'>
-        <Image
-          src='/Logo.png.png'
-          alt='logo'
-          width={250}
-          height={250}
-          className='logo'
-        />
+        <Image src='/logo.png' alt='logo' width={170} height={170} className='logo' />
 
         <h1>
           Olá querido <span>superbooker!</span>

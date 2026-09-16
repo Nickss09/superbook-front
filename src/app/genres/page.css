@@ -13,6 +13,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+h1 span {
+  font-family: "Kavoon", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffd700;
+}
 
 ul {
     font-family: "Kavoon", serif;

@@ -4,8 +4,13 @@ import "./page.css"
 
 export default function GenresPage() {
     return (
+        <>
+        <head>
+            <title>Gêneros Literários</title>
+        </head>
         <main>
-            <h1>Gêneros Literários</h1>
+
+            <h1>Gêneros <span>Literários</span></h1>
             <ul>
                 <Link href='/genres/romance'><li className="romance">Romance</li></Link>
                 <Link href='/genres/fantasia'><li className="fantasia">Fantasia</li></Link>
@@ -16,5 +21,6 @@ export default function GenresPage() {
                 <Link href='/genres/drama'><li className="drama">Drama</li></Link>
             </ul>
         </main>
+        </>
     )
 }

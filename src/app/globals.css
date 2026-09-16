@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #0b0033, #14005c);
+  background: linear-gradient(180deg, #0b0033, #110844);
   color: white;
 }
 
@@ -26,22 +28,28 @@ body {
 }
 
 .logo {
-  width: 200px;
-  height: auto;
+  /* padding-bottom: 20px; */
+  margin-bottom: 50px;
 }
 
 .card h1 {
+  font-family: "Kavoon", serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 26px;
   margin-bottom: 8px;
 }
 
 .card h1 span {
+  font-family: "Kavoon", serif;
+  font-style: normal;
+  font-weight: 400;
   color: #ffd700;
 }
 
 .card p {
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
   color: #ccc;
 }
 
@@ -56,7 +64,7 @@ body {
   border-radius: 10px;
   border: none;
   outline: none;
-  background: #1c0a6b;
+  background: #130466;
   color: white;
   font-size: 14px;
 }
@@ -66,7 +74,7 @@ body {
   padding: 14px;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(90deg, #5a6cff, #7b5cff);
+  background: linear-gradient(90deg, #2656E3, #4a78ff);
   color: white;
   font-size: 15px;
   cursor: pointer;
@@ -79,7 +87,7 @@ body {
 }
 
 .register {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 13px;
 }
 
