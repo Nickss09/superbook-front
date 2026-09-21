@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+* {
+    padding: 10px;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+span {
+    font-family: "Kavoon", serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffd700;
+}
+
+ul {
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #ffffff;
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+    margin-left: -50px;
+    
+    transition: transform 0.2s ease;
+}
+
+
+
+li:hover {
+    transform: translateY(-20px);
+}
+
+li.romance {
+    background-color: #2252DE;
+}
+
+li.fantasia {
+    background-color: #92CEFF;
+}
+
+li.misterio {
+    background-color: #F9CD4C;
+}
+
+li.suspense {
+    background-color: #2252DE;
+}
+
+li.terror {
+    background-color: #92CEFF;
+}
+
+li.aventura {
+    background-color: #F9CD4C;
+}
+
+li.drama {
+    background-color: #2252DE;
+}

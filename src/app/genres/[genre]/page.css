@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+.genre-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 32px 50px 50px;
+  background: #09002d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.genre-header {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+}
+
+.genre-logo {
+  width: 100px;
+  margin-left: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.genre-header h1 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Kavoon', serif;
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu-button {
+  justify-self: end;
+  width: 42px;
+  height: 42px;
+  padding: 7px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 27px;
+  height: 3px;
+  border-radius: 4px;
+  background: #0089c8;
+}
+
+.genre-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 38px auto 0;
+}
+
+.search-box {
+  width: 420px;
+  height: 42px;
+  margin: 0 auto 48px;
+  display: flex;
+  align-items: center;
+  background: #eeeef1;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 18px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #333;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.search-box input::placeholder {
+  color: #555;
+  opacity: 1;
+}
+
+.search-box button {
+  width: 48px;
+  height: 100%;
+  border: 0;
+  background: #147bc1;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* LIVROS */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+  gap: 55px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  height: 390px;
+}
+
+.book-cover {
+  position: relative;
+  width: 100%;
+  height: 315px;
+  padding: 22px 14px 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #d8d1bf;
+  background: #f7efe1;
+  color: #63c8cf;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.cover-title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  font-family: 'Kavoon', serif;
+  font-size: 25px;
+  line-height: 0.95;
+  transform: rotate(-2deg);
+}
+
+.cover-art {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 82px;
+  height: 125px;
+}
+
+.ice-cream {
+  position: absolute;
+  font-size: 78px;
+  line-height: 1;
+  filter: saturate(0.85);
+}
+
+.ice-cream-left {
+  left: 25px;
+  transform: rotate(-9deg);
+}
+
+.ice-cream-right {
+  right: 22px;
+  transform: rotate(9deg);
+}
+
+.cover-author {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  color: #d28a8a;
+  text-align: center;
+  font-size: 9px;
+}
+
+.review-button {
+  margin-top: 12px;
+  min-width: 105px;
+  height: 30px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #2252de;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.review-button:hover {
+  filter: brightness(1.1);
+}
+
+.empty-message {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .genre-page {
+    min-height: 100vh;
+    padding: 16px 20px 30px;
+  }
+
+  .genre-header {
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  .genre-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .genre-header h1 {
+    font-size: 23px;
+  }
+
+  .menu-button {
+    padding: 5px;
+  }
+
+  .menu-button span {
+    width: 21px;
+    height: 2px;
+  }
+
+  .genre-content {
+    margin-top: 25px;
+  }
+
+  .search-box {
+    width: 210px;
+    height: 28px;
+    margin-bottom: 28px;
+  }
+
+  .search-box input {
+    font-size: 8px;
+    padding: 0 9px;
+  }
+
+  .search-box button {
+    width: 32px;
+    font-size: 10px;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .book-card {
+    width: 180px;
+    height: 275px;
+  }
+
+  .book-cover {
+    width: 180px;
+    height: 235px;
+    padding-top: 17px;
+  }
+
+  .cover-title {
+    font-size: 19px;
+  }
+
+  .cover-art {
+    top: 60px;
+    height: 90px;
+  }
+
+  .ice-cream {
+    font-size: 58px;
+  }
+
+  .ice-cream-left {
+    left: 14px;
+  }
+
+  .ice-cream-right {
+    right: 12px;
+  }
+
+  .cover-author {
+    font-size: 6px;
+    bottom: 7px;
+  }
+
+  .review-button {
+    min-width: 75px;
+    height: 23px;
+    margin-top: 7px;
+    font-size: 7px;
+  }
+}
