@@ -14,24 +14,6 @@ O projeto segue a estrutura do App Router do Next.js. Dentro da pasta "src/app" 
 
 A pasta "src/http" possui o arquivo responsável pela configuração da comunicação com a API. Já a pasta "public" é utilizada para armazenar arquivos estáticos, principalmente imagens utilizadas pela interface.
 
-A estrutura principal do projeto é:
-
-superbook-front/
-├── public/
-├── src/
-│   ├── app/
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   └── register/
-│   │       └── page.tsx
-│   └── http/
-│       └── api.ts
-├── package.json
-├── tsconfig.json
-├── next.config.ts
-└── README.md
-
 - Página de Login
 
 A página inicial do SuperBook está localizada no arquivo "src/app/page.tsx" e pode ser acessada pela rota "/". Essa é a primeira tela apresentada quando o usuário entra no sistema.
